@@ -29,12 +29,14 @@ body{
   display:flex;
   justify-content: space-around;
   align-items:center;
-  margin:5px 5px 20px 5px;
+  margin:5px 5px 20px 0px;
 
 }
 .left {
  display: flex;
+ justify-content: flex-start;
  align-items: center;
+ margin:0px;
 }
 
 .left #menu {
@@ -45,6 +47,7 @@ body{
 {
   margin:0px;
   padding:0px;
+  display:flex;
 }
 .icon-section
 {
@@ -154,19 +157,23 @@ body{
   margin:2px;
   width:550px;
   border-radius:2px;
-  box-shadow:2px 2px 3px 2px gray;
+
 }
 
 .searchbar
 {
   display:flex;
+  box-shadow:2px 2px 3px 2px gray;
+  margin-right:0px;
+  padding-right:0px;
 
 }
 .div-form > button
 {
   float: right;
+  width:50px;
   padding: 2px 5px;
-  margin 0px;
+  margin:0px;
   margin-right: 10px;
   background: #ddd;
   font-size: 17px;
