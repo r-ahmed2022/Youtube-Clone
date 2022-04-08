@@ -1,0 +1,82 @@
+.sliding-div {
+  height:100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  text-align:center;
+  line-height:30px;
+  letter-spacing:4px;
+  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+
+}
+
+.sliding-content {
+  position: relative;
+  top: 25%;
+  width:70%;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin:10px 0px 0px 35px;
+  color:black;
+  box-shadow: 2px 2px 2px 2px gray;
+
+}
+.sliding-menu
+{
+  display:flex;
+  flex-direction:column;
+  color:black;
+
+
+}
+
+.submenu
+{
+  display:flex;
+
+
+}
+.submenu > a
+{
+  font-size:0.8 rem;
+}
+#sliding-menu-items{
+  list-style-type:none;
+
+
+}
+
+.sliding-div a {
+  padding: 2px;
+  text-decoration: none;
+  font-size:20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sliding-div a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.sliding-div .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .sliding-div a {font-size: 20px}
+  .sliding-div .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}

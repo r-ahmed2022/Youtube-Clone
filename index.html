@@ -4,17 +4,32 @@
 
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/sliding-menu.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
 <body>
-  <div class="container">
+  <div id="container">
   <nav class="navbar" >
   <div class="left">
-  <i id="menu" class="material-icons">menu</i>
+  <a class="menu-link" target="_blank" onclick="openSlidingDiv()"><i id="menu" class="material-icons">menu</i></a>
   <img class="logo" src="images/YouTube-Logo.png"/>
   </div>
+   <!-- start of sliding menu -->
+   <div id="sliding-menu-items" class="sliding-div">
+                <img class="logo" src="images/YouTube-Logo.png"/>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeSlidingDiv()">&times;</a>
+                <div class="sliding-content">
+                  <div class="sliding-menu">
+                     <div class="submenu"><i class="material-icons">home</i><a href="#">Home</a></div>
+                     <div class="submenu"><i class="material-icons">explore</i><a href="#">Explore</a></div>
 
+                  </div>
+
+                 </div>
+               </div>
+
+   <!-- end of sliding menu -->
   <div class="div-form">
     <form class="searchbar" >
   <input class="search" type="text" placeholder="Search">
@@ -25,7 +40,7 @@
 
 
 
-  <div class="icon-section">
+  <div id="icon-section">
      <i class="material-icons">videocam</i>
      <i class="material-icons">apps</i>
      <i class="material-icons">notifications</i>
@@ -56,7 +71,7 @@
    </div>
    </div>
    <div class="v-1">
-   <div class="thumb" onClick="document.getElementById('main-player').src='https://www.youtube.com/watch?v=MFtsLRphqDM?autoplay=1&rel=0&showinfo=0&autohide=1'">
+   <div class="thumb" onClick="document.getElementById('main-player').src='https://www.youtube.com/embed/MFtsLRphqDM'">
    <img src="images\MFtsLRphqDM.jpg"/>
   </div>
   <div class="desc">
@@ -64,7 +79,7 @@
   </div>
   </div>
   <div class="v-1">
-  <div class="thumb" onClick="document.getElementById('main-player').src= https://www.youtube.com/watch?v=iNP_KmOFqXs?autoplay=1&rel=0&showinfo=0&autohide=1' ">
+  <div class="thumb" onClick="document.getElementById('main-player').src=' https://www.youtube.com/embed/iNP_KmOFqXs' ">
   <img src="images\iNP_KmOFqXs.jpg"/>
  </div>
  <div class="desc">
@@ -78,5 +93,6 @@
 
   </div>
   </div>
+   <script src="js/sliding-menu.js"></script>
 </body>
 </html>
