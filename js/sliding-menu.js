@@ -1,3 +1,5 @@
+
+
 function openSlidingDiv() {
   document.getElementById("sliding-menu-items").style.width = "20%";
   document.getElementById("container").style.backgroundColor="black";

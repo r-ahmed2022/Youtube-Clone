@@ -7,8 +7,10 @@
 <link rel="stylesheet" href="css/sliding-menu.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 </head>
 <body>
+
   <div id="container">
   <nav class="navbar" >
   <div class="left">
@@ -56,8 +58,8 @@
    <h2 class="main-video-desc">Description of the video </h2>
   </div>
   <div class="right-content">
-  <div class="top">
-  <img src="images/ad-1.jpg" height="100px"/>
+  <div id="top">
+  <img id="ads" src="images/ad-1.jpg" height="100px"/>
   <h4> Macdonald's burger</<h4>
   </div>
   <div class="bottom">
@@ -94,5 +96,6 @@
   </div>
   </div>
    <script src="js/sliding-menu.js"></script>
+   <script src="js/ads.js"></script>
 </body>
 </html>
